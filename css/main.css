@@ -1,0 +1,123 @@
+/*---------------------------------------------*/
+/*                  BASIC                      */
+
+:root {
+    --main-color: #04445F;
+    --button-color: #189AB4;
+  }
+html {scroll-behavior: smooth;}
+body{
+    font-family: 'Poppins', sans-serif;
+    color: var(--main-color);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color:var(--main-color);
+}
+li{list-style: none;}
+
+
+/*---------------------------------------------*/
+/*                  HEADER                    */
+
+header{
+    position: relative;
+    font-size: 24px;
+    line-height: 36px;
+    background-image: linear-gradient(to right, #D4FFF7 , #F7FFFE);
+    font-weight: 500px;
+    z-index: 1;
+    border-bottom:none;
+}
+li a img{
+    float: right;
+    width: 40px;
+    height: 40px;
+}
+li a .img-card{
+    width: 25px;
+    height: 25px;
+}
+header .logo img{float: right;}
+header .main-nav{    
+    padding: 0 10px;
+    position: absolute;
+    display: block;}
+header .main-nav ul{
+    display: flex;
+    flex-direction: row-reverse;
+}
+header .main-nav ul li{
+    padding: 0 24px;
+    font-size: 24px;
+}
+
+/*---------------------------------------------*/
+/*                     HERO                    */
+
+.container{
+    display: flex;
+    position: relative;
+    flex-direction: row-reverse;
+    height: 100vh;
+}
+.hero__desc{
+    padding-top: 100PX;
+    padding-right: 100px;
+    text-align: right;
+}
+.hero__desc img{
+    position: absolute;
+    height: 100vh;
+    left: 0px;
+}
+.hero__image{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 60%;
+  }
+.hero__desc h1{
+    margin: 0;
+    font-size: 64px;
+    line-height: 96px;
+    font-weight: 800;
+}
+.hero__desc p{
+  margin: 0;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 500;
+}
+.hero__desc li{
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  direction: rtl;
+  list-style: unset;
+  margin-right: 10px;
+}
+.hero__desc li::marker{color: var(--button-color);}
+
+.hero__desc .button{
+    background: #189AB4;
+    border-radius: 16px;
+    padding: 15px 100px;
+    color: white;
+    font-size: 24px;
+}
+.arrow-left {
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 5px;
+    margin-right: 50px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+/*--------------------------------------------*/
+/*                    Responsive              */
