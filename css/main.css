@@ -38,6 +38,7 @@ li a img{
     height: 40px;
 }
 li a .img-card{
+    float: none;
     width: 25px;
     height: 25px;
 }
